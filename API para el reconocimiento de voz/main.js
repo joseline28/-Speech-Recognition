@@ -16,13 +16,13 @@ recognition.addEventListener('result', (e)=>{
 
   p.innerText = text;
   if(e.results[0].isFinal){
-    if (text.includes('how are you')) {
+    if (text.includes('hola que tal')) {
       p = document.createElement('p');
       p.classList.add('replay');
-      p.innerText = 'I am fine';
+      p.innerText = 'un gusto verte Joseline';
       texts.appendChild(p)
     }
-    if (text.includes("what's your name") || text.includes('what is your name')) {
+    if (text.includes("what's yo") || text.includes('what is your name')) {
       p = document.createElement('p');
       p.classList.add('replay');
       p.innerText = 'My Name is Cifar';
